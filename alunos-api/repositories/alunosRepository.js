@@ -36,9 +36,9 @@ function remove(id) {
   return true;
 }
 
-// function findAll() {
-//     return alunos;
-// }
+ function findAll() {
+     return alunos;
+ }
 
 // function findById(id) {
 //     const index = alunos.findIndex(aluno => aluno.id === id);
