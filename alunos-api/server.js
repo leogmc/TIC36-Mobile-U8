@@ -18,10 +18,10 @@ app.post("/alunos", (req, res) => {
   res.status(201).json(aluno);
 });
 
-// app.get('/alunos', (req, res) => {
-//     const alunos = findAll();
-//     res.json(alunos);
-// });
+ app.get('/alunos', (req, res) => {
+     const alunos = findAll();
+    res.json(alunos);
+ });
 
 // app.get('/alunos/:id', (req, res) => {
 //     const { id } = req.params;
