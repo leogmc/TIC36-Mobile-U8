@@ -13,19 +13,14 @@ function create({ nome, email, nome_curso }) {
   return aluno;
 }
 
- function update(id, {nome, email, nome_curso}) {
-     const index = alunos.findIndex(aluno => aluno.id === id);
-     if (index === -1) {
-         return null;
-     }
-     alunos[index] = {
-         id,
-         nome,
-         email,
-         nome_curso,
-     };
-     return alunos[index];
- }
+function update(id, { nome, email, nome_curso }) {
+  const index = alunos.findIndex((aluno) => aluno.id === id);
+  if (index === -1) {
+      return null;
+  }
+  alunos[index] = { id, nome, email, nome_curso };
+  return alunos[index];
+}
 
 function remove(id) {
   const index = alunos.findIndex((aluno) => aluno.id === id);
