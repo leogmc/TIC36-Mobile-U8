@@ -35,13 +35,13 @@ function remove(id) {
      return alunos;
  }
 
-// function findById(id) {
-//     const index = alunos.findIndex(aluno => aluno.id === id);
-//     if (index === -1) {
-//         return false;
-//     }
-//     return alunos[index];
-// }
+function findById(id) {
+    const index = alunos.findIndex(aluno => aluno.id === id);
+    if (index === -1) {
+        return false;
+    }
+    return alunos[index];
+}
 
 module.exports = {
   create,

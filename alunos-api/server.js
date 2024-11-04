@@ -23,11 +23,11 @@
       res.json(alunos);
   });
 
-  // app.get('/alunos/:id', (req, res) => {
-  //     const { id } = req.params;
-  //     const aluno = findById(id);
-  //     res.json(aluno);
-  // });
+  app.get('/alunos/:id', (req, res) => {
+      const { id } = req.params;
+      const aluno = findById(id);
+      res.json(aluno);
+  });
 
    app.put('/alunos/:id', (req, res) => {
        const { id } = req.params;
